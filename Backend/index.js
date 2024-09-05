@@ -1,5 +1,6 @@
 const express = require('express');
-const {connectDB} = require('./db.js');  // Database connection
+const connectDB = require('./db.js');  // Correct import
+ // Database connection
 const User = require('./Schema/user.js');  // User schema
 const Recipe = require('./Schema/recipe.js');  // Recipe schema
 const bcrypt = require('bcryptjs');  // For password hashing
@@ -282,7 +283,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
   });
-  
+
 }
 
 
@@ -292,7 +293,8 @@ if (process.env.NODE_ENV === 'production') {
 /**
  * Start the server
  */
+connectDB();
 app.listen(PORT, () => {
-    connectDB();
+   
     console.log('Server is running on port ' + PORT);   
 });
