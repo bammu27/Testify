@@ -3,11 +3,11 @@
     "version": "1.0.0",
     "description": "MERN stack application",
     "scripts": {
-      "start": "node backend/index.js",
-      "build": "npm run install-backend && npm run install-frontend && npm run build-frontend",
-      "install-backend": "cd backend && npm install",
-      "install-frontend": "cd frontend && npm install",
-      "build-frontend": "cd frontend && npm run build"
+      "start": "node Backend/index.js",
+      "build": "npm run install-Backend && npm run install-Frontend && npm run build-Frontend",
+      "install-backend": " ./Backend && npm install",
+      "install-frontend": " ./Frontend && npm install",
+      "build-frontend": "./Frontend && npm run build"
     },
     "engines": {
       "node": "v19.7.0"
