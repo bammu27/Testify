@@ -30,7 +30,8 @@ const id = localStorage.getItem('username')
             <div className='container'>
                 <div className='card'> 
                 <div className='card-img'>
-                    <img src='../../public/Food_img/delicious-indian-food-tray.jpg' alt='food' />
+                <img src='/Food_img/delicious-indian-food-tray.jpg' alt='food' />
+
                 </div>
                 <div className='card-content'>
                     <h3>Spice Up Your Plate</h3>

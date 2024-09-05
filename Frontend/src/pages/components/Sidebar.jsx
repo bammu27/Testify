@@ -6,7 +6,7 @@ import { Menu, Settings, AccountCircle} from '@mui/icons-material/';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
-function Sidebar({onFetchPublic,onFetchShared,onFetchReceived}) {
+function Sidebar({onFetchPublic,onFetchShared,onFetchReceived,filterByCuisine, filterByType}) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [type, setType] = useState('');
   const [cuisine, setCuisine] = useState('');
