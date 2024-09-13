@@ -64,7 +64,7 @@ app.post('/newuser', async(req, res) => {
 });
 
 // User login
-app.post('/login', async(req, res) => {
+app.post('/Signin', async(req, res) => {
     const { username, password } = req.body;
 
     try {

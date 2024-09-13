@@ -12,7 +12,7 @@ const Login = () => {
     event.preventDefault();
     
     try {
-      const response = await fetch('`https://testifyat.onrender.com/login', {
+      const response = await fetch('`https://testifyat.onrender.com/Signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
