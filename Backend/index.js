@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 //Auth midleware
 
 
@@ -291,8 +291,9 @@ if (process.env.NODE_ENV === 'production') {
 /**
  * Start the server
  */
-connectDB();
+
 app.listen(PORT, () => {
+    connectDB();
    
     console.log('Server is running on port ' + PORT);   
 });
