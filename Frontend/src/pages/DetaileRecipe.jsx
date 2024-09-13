@@ -21,7 +21,7 @@ const RecipeDetailPage = () => {
 
   const fetchRecipe = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/recipe/${id}`, {
+      const response = await fetch(`http://localhost:10000/recipe/${id}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -62,7 +62,7 @@ const RecipeDetailPage = () => {
   const fetchUser = async () => {
     try {
       const username = localStorage.getItem('username');
-      const response = await fetch(`http://localhost:5000/user/${username}`, {
+      const response = await fetch(`http://localhost:10000/user/${username}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -78,7 +78,7 @@ const RecipeDetailPage = () => {
 
   const handleCommentSubmit = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/recipe/comment/${id}`, {
+      const response = await fetch(`http://localhost:10000/recipe/comment/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ const RecipeDetailPage = () => {
 
   const handleLike = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/recipe/like/${id}`, {
+      const response = await fetch(`http://localhost:10000/recipe/like/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

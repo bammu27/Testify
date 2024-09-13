@@ -14,7 +14,7 @@ const Signup = () => {
     event.preventDefault();
     setError(null); // Reset error before making the request
 
-    fetch('http://localhost:5000/newuser', {
+    fetch('http://localhost:10000/newuser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -44,7 +44,7 @@ function Recipes() {
 
   const fetchSharedRecipes = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/recipes/creater/${username}`, {
+      const response = await fetch(`http://localhost:10000/recipes/creater/${username}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function Recipes() {
 
   const fetchReceivedRecipes = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/recipes/shared/${username}`, {
+      const response = await fetch(`http://localhost:10000/recipes/shared/${username}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

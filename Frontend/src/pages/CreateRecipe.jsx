@@ -59,7 +59,7 @@ const CreateRecipe = () => {
       sharedWith
     };
 
-    fetch(`http://localhost:5000/user/recipe/${username}`, {
+    fetch(`http://localhost:10000/user/recipe/${username}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
